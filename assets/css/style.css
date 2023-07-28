@@ -34,6 +34,8 @@ nav {
   display: flex;
   justify-content: center;
   border-bottom: 1px solid black;
+  position: fixed;
+  background-color: #ffc017;
 }
 
 nav div.max-width {
@@ -59,6 +61,7 @@ nav div.max-width > div a {
   display: flex;
   justify-content: center;
   border-bottom: 1px solid black;
+  margin-top: 85.07px;
 }
 
 #container-h1-and-svgOfM .max-width {
