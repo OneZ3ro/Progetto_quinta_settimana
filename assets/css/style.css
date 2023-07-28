@@ -19,6 +19,7 @@ header,
 #container-h1-and-svgOfM .max-width > div,
 main,
 .card > div,
+#container-news,
 .news > div {
   display: flex;
   flex-direction: column;
@@ -158,8 +159,7 @@ header h3 {
   font-weight: 500;
 }
 
-#container-cards,
-#container-news {
+#container-cards {
   display: flex;
   flex-flow: row wrap;
 }
@@ -184,13 +184,11 @@ header h3 {
   margin-right: 16px;
 }
 
-.card > div div:nth-of-type(1),
-.news > div div:nth-of-type(1) {
+.card > div div:nth-of-type(1) {
   gap: 10px;
 }
 
-.card > div > div:not(:last-of-type),
-.news > div > div:not(:last-of-type) {
+.card > div > div:not(:last-of-type) {
   margin-bottom: 16px;
 }
 
@@ -225,10 +223,11 @@ header h3 {
 
 #container-news-and-sticky .max-width {
   display: flex;
+  justify-content: space-between;
+  gap: 50px;
 }
 
 .news {
-  width: 77%;
   align-items: center;
   gap: 30px;
   margin-bottom: 48px;
@@ -252,6 +251,10 @@ header h3 {
   gap: 5px;
 }
 
+.news > div > div:not(:last-of-type) {
+  margin-bottom: 8px;
+}
+
 .news h2 {
   font-size: 20px;
   font-weight: 800;
@@ -260,6 +263,10 @@ header h3 {
 .news h3 {
   font-size: 16px;
   font-weight: 300;
+}
+
+.news > div div:nth-of-type(1) {
+  gap: 7px;
 }
 
 .news img.img-grande {
@@ -277,4 +284,34 @@ header h3 {
   padding: 5px 12px;
   background-color: #f2f2f2;
   border-radius: 100px;
+}
+
+#container-sticky {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  padding-inline: 16px;
+}
+
+#container-sticky h2 {
+  font-weight: 500;
+}
+
+#container-sticky > div {
+  display: flex;
+  flex-direction: column;
+}
+
+#container-sticky #container-preferences {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#container-sticky #container-preferences .preference {
+  padding: 8px 16px;
+  background-color: #f2f2f2;
+  border-radius: 100px;
+  margin: 10px 5px;
+  font-size: 14px;
 }
