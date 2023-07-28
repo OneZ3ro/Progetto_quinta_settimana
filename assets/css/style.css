@@ -70,6 +70,20 @@ nav {
   z-index: 1;
 }
 
+/* ----------- PER JAVASCRIPT ----------- */
+
+.scroll-down {
+  background-color: white;
+  transition: background-color 1s;
+}
+
+.scroll-up {
+  background-color: #ffc017;
+  transition: background-color 1s;
+}
+
+/* ----------------------------------------- */
+
 nav div.max-width {
   display: flex;
   justify-content: space-between;
@@ -240,6 +254,10 @@ header h3 {
   gap: 56px;
 }
 
+#container-news {
+  min-width: 54%;
+}
+
 .news {
   align-items: center;
   gap: 30px;
@@ -302,7 +320,10 @@ header h3 {
 #container-sticky {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: flex-start;
+  align-self: flex-start;
+  position: sticky;
+  top: 110px;
   width: 46%;
   padding-inline: 16px;
 }
@@ -311,9 +332,11 @@ header h3 {
   font-weight: 500;
 }
 
-#container-sticky > div {
+#container-sticky #h2-cont-pref {
   display: flex;
   flex-direction: column;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #f2f2f2;
 }
 
 #container-sticky #container-preferences {
@@ -322,7 +345,7 @@ header h3 {
 }
 
 #container-sticky #container-preferences .preference {
-  padding: 8px 16px;
+  padding: 12px 16px;
   background-color: #f2f2f2;
   border-radius: 100px;
   margin: 10px 5px;
@@ -333,4 +356,16 @@ header h3 {
   margin-top: 14px;
   color: #1a8917;
   font-weight: 500;
+}
+
+#container-sticky #container-functionality {
+  display: flex;
+  flex-flow: row wrap;
+  padding-block: 24px;
+}
+
+#container-sticky #container-functionality span {
+  margin: 0 21px 12px 0;
+  font-size: 14px;
+  color: #6b6b6b;
 }
