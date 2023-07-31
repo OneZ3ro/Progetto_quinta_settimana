@@ -331,6 +331,7 @@ header h3 {
 
 #container-sticky h2 {
   font-weight: 500;
+  cursor: default;
 }
 
 #container-sticky #h2-cont-pref {
@@ -351,6 +352,7 @@ header h3 {
   border-radius: 100px;
   margin: 10px 5px;
   font-size: 14px;
+  cursor: pointer;
 }
 
 #container-sticky a {
@@ -365,8 +367,11 @@ header h3 {
   padding-block: 24px;
 }
 
-#container-sticky #container-functionality span {
+#container-sticky #container-functionality .functionality {
   margin: 0 21px 12px 0;
   font-size: 14px;
   color: #6b6b6b;
+}
+#container-sticky #container-functionality .functionality {
+  cursor: pointer;
 }
